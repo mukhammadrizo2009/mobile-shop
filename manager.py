@@ -7,7 +7,7 @@ from register import register_uz , register_en , register_ru
 from send_name import send_name_uz , send_name_en , send_name_ru
 from gender import gender_uz , gender_en , gender_ru
 from location import location_uz , location_en , location_ru
-from menu import menu_uz , to_menu_uz , menu_en , to_menu_en , menu_ru , to_menu_ru
+from menu import menu_uz , to_menu_uz , menu_en , to_menu_en , menu_ru , to_menu_ru , uz_menu , en_menu , ru_menu
 from desktop import menu_desktops_uz , menu_desktops_en , menu_desktops_ru
 from phones import phones_uz , iphones_uz , samsung_uz , xiomi_uz , phones_en , iphones_en , samsung_en , xiomi_en , phones_ru , iphones_ru , samsung_ru , xiomi_ru
 from airpods import airpods_uz , airpods_en , airpods_ru
@@ -46,8 +46,8 @@ def main() -> None:
     dispatcher.add_handler(MessageHandler(Filters.text("Qurulmalar🌐") , menu_desktops_uz))
     dispatcher.add_handler(MessageHandler(Filters.text("Sozlammalar⚙️") , settings_uz))
     dispatcher.add_handler(MessageHandler(Filters.text("Tilni o'zgartirish!🔃") , change_language_uz))
-    dispatcher.add_handler(MessageHandler(Filters.text("Ingliz 🇺🇸") , menu_en))
-    dispatcher.add_handler(MessageHandler(Filters.text("Rus 🇷🇺") , menu_ru))
+    dispatcher.add_handler(MessageHandler(Filters.text("Ingliz 🇺🇸") , en_menu))
+    dispatcher.add_handler(MessageHandler(Filters.text("Rus 🇷🇺") , ru_menu))
     dispatcher.add_handler(MessageHandler(Filters.text("Telfon raqamni o'zgartirish!") , change_phone_number_uz))
     dispatcher.add_handler(MessageHandler(Filters.text("Raqamni o'zgartirish!") , about_phone_number_uz))
     dispatcher.add_handler(MessageHandler(Filters.text("Buyurtmalar 📦") , order_uz))
@@ -81,8 +81,8 @@ def main() -> None:
     dispatcher.add_handler(MessageHandler(Filters.text("Structures🌐") , menu_desktops_en))
     dispatcher.add_handler(MessageHandler(Filters.text("Settings⚙️") , settings_en))
     dispatcher.add_handler(MessageHandler(Filters.text("Change the language!🔃") , change_language_en))
-    dispatcher.add_handler(MessageHandler(Filters.text("Uzbek 🇺🇿") , menu_uz))
-    dispatcher.add_handler(MessageHandler(Filters.text("Russian 🇷🇺") , menu_ru))
+    dispatcher.add_handler(MessageHandler(Filters.text("Uzbek 🇺🇿") , uz_menu))
+    dispatcher.add_handler(MessageHandler(Filters.text("Russian 🇷🇺") , ru_menu))
     dispatcher.add_handler(MessageHandler(Filters.text("Change phone number!") , change_phone_number_en))
     dispatcher.add_handler(MessageHandler(Filters.text("Change number!") , about_phone_number_en))
     dispatcher.add_handler(MessageHandler(Filters.text("Orders 📦") , order_en))
@@ -116,8 +116,8 @@ def main() -> None:
     dispatcher.add_handler(MessageHandler(Filters.text("Структуры🌐") , menu_desktops_ru))
     dispatcher.add_handler(MessageHandler(Filters.text("Настройки⚙️") , settings_ru))
     dispatcher.add_handler(MessageHandler(Filters.text("Изменить язык!🔃") , change_language_ru))
-    dispatcher.add_handler(MessageHandler(Filters.text("Узбекский 🇺🇿") , menu_uz))
-    dispatcher.add_handler(MessageHandler(Filters.text("Английский 🇺🇸") , menu_en))
+    dispatcher.add_handler(MessageHandler(Filters.text("Узбекский 🇺🇿") , uz_menu))
+    dispatcher.add_handler(MessageHandler(Filters.text("Английский 🇺🇸") , ru_menu))
     dispatcher.add_handler(MessageHandler(Filters.text("Изменить номер телефона!") , change_phone_number_ru))
     dispatcher.add_handler(MessageHandler(Filters.text("Изменить номер!") , about_phone_number_ru))
     dispatcher.add_handler(MessageHandler(Filters.text("Заказы 📦") , order_ru))
