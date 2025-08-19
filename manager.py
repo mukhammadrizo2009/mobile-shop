@@ -15,7 +15,7 @@ from tablets import tablet_uz , samsung_tablet_uz , apple_tablet_uz , tablet_en 
 from watches import watches_uz , watches_en ,watches_ru
 from send_idea import send_idea_uz , send_idea_en , send_idea_ru
 from settings import (settings_uz , change_language_uz , change_phone_number_uz , settings_en , change_language_en ,
-change_phone_number_en , settings_ru , change_language_ru , change_phone_number_ru)
+                    change_phone_number_en , settings_ru , change_language_ru , change_phone_number_ru)
 from order import order_uz , order_en , order_ru
 from info import (about_phone_number_uz , about_phone_number_en , about_phone_number_ru )
 
